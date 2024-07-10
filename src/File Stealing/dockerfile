@@ -1,0 +1,28 @@
+# Use an official Ubuntu base image
+FROM ubuntu:20.04
+
+# Install necessary packages
+RUN apt-get update && apt-get install -y \
+    curl \
+    wget \
+    vim \
+    netcat \
+    nmap
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy the entire directory containing target files to the container
+COPY ./my-files/ /usr/src/app/my-files/
+
+# Expose port 9999 for the vulnerable application
+EXPOSE 9999
+
+# Copy the vulnerable service script
+COPY vulnerable_service.sh /usr/src/app/vulnerable_service.sh
+
+# Make the script executable
+RUN chmod +x /usr/src/app/vulnerable_service.sh
+
+# Start the vulnerable service
+CMD ["/usr/src/app/vulnerable_service.sh"]

@@ -1,0 +1,83 @@
+.HomePageUser {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.HomePageUser-body {
+  display: flex;
+  flex: 1;
+}
+
+.HomePageUser-content {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.HomePageUser-recent-articles {
+  display: flex;
+  flex-wrap: wrap; /* Membungkus card agar berpindah ke baris berikutnya jika tidak cukup lebar */
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.HomePageUser-article-link {
+  text-decoration: none; /* Menghapus dekorasi teks dari link */
+}
+
+.HomePageUser-article-card {
+  background: #f9f9f9;
+  padding: 10px; /* Kurangi padding untuk memperkecil ukuran card */
+  margin: 10px; /* Menambahkan margin agar card memiliki jarak yang sama di sekitar */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 200px; /* Lebar card fleksibel dengan ukuran minimum 200px */
+  max-width: 300px; /* Tetapkan lebar maksimal card */
+  display: flex;
+  flex-direction: column; /* Membuat konten card berbaris vertikal */
+  align-items: center;
+  text-align: center;
+  cursor: pointer; /* Ubah kursor menjadi pointer */
+  height: 250px; /* Tetapkan tinggi card yang sama */
+  justify-content: space-between; /* Sebar konten secara merata dalam card */
+}
+
+.HomePageUser-article-image {
+  width: 100%;
+  height: 150px; /* Kurangi tinggi gambar */
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.HomePageUser-article-card h2 {
+  margin: 0 0 10px;
+  font-size: 16px; /* Kurangi ukuran font judul */
+  color: #333;
+  flex-grow: 1; /* Biarkan judul tumbuh untuk memenuhi ruang */
+}
+
+/* Responsif */
+@media (max-width: 1200px) {
+  .HomePageUser-article-card {
+    flex: 1 1 22%; /* 4 card per baris pada layar yang lebih kecil */
+  }
+}
+
+@media (max-width: 992px) {
+  .HomePageUser-article-card {
+    flex: 1 1 30%; /* 3 card per baris pada layar yang lebih kecil */
+  }
+}
+
+@media (max-width: 768px) {
+  .HomePageUser-article-card {
+    flex: 1 1 45%; /* 2 card per baris pada layar yang lebih kecil */
+  }
+}
+
+@media (max-width: 576px) {
+  .HomePageUser-article-card {
+    flex: 1 1 100%; /* 1 card per baris pada layar yang lebih kecil */
+  }
+}

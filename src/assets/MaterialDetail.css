@@ -1,0 +1,87 @@
+.article-container {
+    width: calc(100% - 250px); /* Mengurangi lebar sidebar dari total lebar */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    min-height: calc(100vh - 60px); /* Mengurangi tinggi navbar dari total tinggi viewport */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.article-container div {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.author-info {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Styling untuk mengatur gambar, jika ada */
+.article-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk paragraf dalam artikel */
+p {
+    margin-bottom: 1em;
+}
+
+/* Responsiveness adjustments */
+@media (max-width: 768px) {
+    .article-container {
+        width: 100%;
+        padding: 15px;
+        box-shadow: none;
+        border-radius: 0;
+        min-height: calc(100vh - 50px);
+    }
+
+    .article-container h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .article-container div {
+        font-size: 14px;
+    }
+
+    .author-info {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-container {
+        padding: 10px;
+        min-height: calc(100vh - 40px);
+    }
+
+    .article-container h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .article-container div {
+        font-size: 12px;
+    }
+
+    .author-info {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,121 @@
+.MateriAuthorBody {
+  display: flex;
+}
+
+.MateriAuthorText {
+  transition: color 0.3s ease;
+}
+
+.MateriAuthorContent {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+.MateriAuthorSearch-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.MateriAuthorSearch-bar input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.MateriAuthorSearch-bar button {
+  padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.MateriAuthorSearch-bar button:hover {
+  background-color: #0056b3;
+}
+
+.MateriAuthorCard {
+  display: flex;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.MateriAuthorCard:hover {
+  transform: scale(1.02);
+}
+
+.MateriAuthorImage img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.MateriAuthorContentDetails {
+  flex: 1;
+}
+
+.MateriAuthorContentDetails h3 {
+  margin: 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.MateriAuthorContentDetails p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.MateriAuthorContentDetails .instructor {
+  font-weight: bold;
+  color: #555;
+}
+
+.MateriAuthorEdit {
+  display: flex;
+  align-items: center;
+}
+
+.MateriAuthorEdit .edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Added margin-right to separate buttons */
+}
+
+.MateriAuthorEdit .edit-button:hover {
+  background-color: #0056b3;
+}
+
+.MateriAuthorEdit .delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.MateriAuthorEdit .delete-button:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,51 @@
+.web-shell {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: monospace;
+}
+
+.shell-output {
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.shell-line {
+  display: flex;
+}
+
+.shell-line.command {
+  color: #00ff00;
+}
+
+.shell-line.output {
+  color: #ffffff;
+}
+
+.shell-line.error {
+  color: #ff0000;
+}
+
+.shell-input {
+  display: flex;
+  align-items: center;
+}
+
+.shell-input span {
+  margin-right: 5px;
+}
+
+.shell-input input {
+  flex: 1;
+  background: none;
+  border: none;
+  color: #00ff00;
+  outline: none;
+}

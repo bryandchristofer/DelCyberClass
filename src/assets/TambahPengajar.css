@@ -1,0 +1,52 @@
+.TambahPengajarBody {
+  display: flex;
+  flex: 1;
+}
+
+/* Enhance the container styling */
+.container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  width: 400px; /* Fixed width for better control */
+  margin: 30px auto; /* Center the form on the page */
+}
+
+/* Update form input styling */
+.add-author-form input {
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px; /* More space between inputs */
+  width: calc(100% - 30px); /* Full width minus padding */
+}
+
+/* Update button styling */
+.add-author-form button {
+  background-color: #0056b3; /* Darker blue for better contrast */
+  color: #ffffff;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.add-author-form button:hover {
+  background-color: #003580; /* Even darker on hover */
+}
+
+/* Additional styling for labels */
+.add-author-form label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Title Styling */
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}

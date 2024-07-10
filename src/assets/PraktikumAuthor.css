@@ -1,0 +1,113 @@
+.PraktikumAuthorBody {
+    display: flex;
+  }
+  
+  .PraktikumAuthorContent {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f2f5;
+  }
+  
+  .PraktikumAuthorSearch-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .PraktikumAuthorSearch-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .PraktikumAuthorSearch-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .PraktikumAuthorSearch-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  .PraktikumAuthorCard {
+    display: flex;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .PraktikumAuthorCard:hover {
+    transform: scale(1.02);
+  }
+  
+  .PraktikumAuthorImage img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .PraktikumAuthorContentDetails {
+    flex: 1;
+  }
+  
+  .PraktikumAuthorContentDetails h3 {
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .PraktikumAuthorContentDetails p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .PraktikumAuthorEdit {
+    display: flex;
+    align-items: center;
+  }
+  
+  .PraktikumAuthorEdit .edit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .PraktikumAuthorEdit .edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .PraktikumAuthorEdit .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .PraktikumAuthorEdit .delete-button:hover {
+    background-color: #c82333;
+  }
+  

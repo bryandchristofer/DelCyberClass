@@ -1,0 +1,115 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Styles for navbar */
+.Login-Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff; /* Adjust to match your design */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Login-Nav-Brand {
+  font-size: 24px; /* Adjust to match your design */
+  color: #333; /* Adjust to match your design */
+  /* Assuming the brand is just text; if it's an image, additional styles will be needed */
+}
+
+.register-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Adjust to match your design */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles for login form container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Adjust height to account for the navbar */
+  background-color: #f0f2f5; /* Match the background color */
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Fixed width */
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #007bff; /* Adjust color to match design */
+  font-size: 14px;
+}
+
+.login-form button {
+  padding: 10px;
+  background-color: #007bff; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Add any additional global styles, such as the navbar, if needed */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+  font-size: 24px;
+  color: #333;
+}
+
+.login-button, .register-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #007bff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}

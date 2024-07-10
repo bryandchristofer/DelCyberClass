@@ -1,0 +1,11 @@
+Name: John Doe
+Address: 123 Main St, Springfield, IL 62704
+Phone: (555) 123-4567
+Email: johndoe@example.com
+Date of Birth: January 1, 1980
+Marital Status: Married
+Occupation: Software Developer
+Company: Tech Solutions Inc.
+Emergency Contact: Jane Doe, (555) 765-4321
+Medical ID: 9876543210
+Driver's License Number: D123-4567-8901

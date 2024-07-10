@@ -1,0 +1,76 @@
+.SidebarAdmin {
+  width: 250px;
+  transition: width 0.3s;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+}
+
+.collapsed {
+  width: 50px; /* Smaller width when collapsed */
+}
+
+.SidebarAdmin-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-left: 3px solid transparent;
+}
+
+.nav-item .icon {
+  margin-right: 10px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: #555;
+  border-left: 3px solid #00b4d8;
+}
+
+.nav-item:hover .text,
+.nav-item.active .text {
+  color: #00b4d8;
+}
+
+.text {
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block;
+  }
+
+  .SidebarAdmin {
+    width: 50px;  /* Start collapsed on small screens */
+  }
+
+  .collapsed {
+    width: 50px;
+  }
+
+  .text {
+    display: none; /* Hide text labels on small screens */
+  }
+}

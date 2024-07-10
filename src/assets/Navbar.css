@@ -1,0 +1,42 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.Navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.Navbar-logo {
+  font-weight: bold;
+}
+
+.Navbar-profile {
+  font-size: 1.5rem; /* Adjust the size of the icon */
+  cursor: pointer; /* To show interactive cursor on hover */
+  position: relative; /* Relative to the logout button */
+}
+
+.Logout-button {
+  position: absolute;
+  top: 100%; /* Directly below the profile icon */
+  right: 0;
+  padding: 0.5rem 1rem;
+  color: white; /* Change text color to white for better contrast */
+  background-color: #f44336; /* A red color for the background */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer; /* Ensure it's clear this is a clickable button */
+}
+
+.Logout-button:hover {
+  background-color: #d32f2f; /* Slightly darker shade on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Larger shadow on hover */
+}

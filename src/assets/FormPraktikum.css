@@ -1,0 +1,90 @@
+.FormPraktikumBody {
+  display: flex;
+  flex: 1;
+}
+
+.praktikum-form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.praktikum-form-container-fullscreen {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.praktikum-form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.praktikum-form-group {
+  margin-bottom: 20px;
+}
+
+.praktikum-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.praktikum-form-group input,
+.praktikum-form-group select,
+.praktikum-form-group .ql-container {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.praktikum-form-group .ql-container {
+  height: 200px;
+}
+
+.praktikum-submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.praktikum-submit-button:disabled {
+  background-color: #ccc;
+}
+
+.praktikum-submit-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.praktikum-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.praktikum-message.success {
+  color: green;
+}
+
+.praktikum-message.error {
+  color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

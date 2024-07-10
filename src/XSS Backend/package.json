@@ -1,0 +1,22 @@
+{
+    "name": "xss-backend",
+    "version": "1.0.0",
+    "description": "Backend for the XSS practice lab",
+    "main": "BackendXSS.js",
+    "scripts": {
+      "start": "node BackendXSS.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "cors": "^2.8.5"
+    },
+    "devDependencies": {},
+    "keywords": [
+      "xss",
+      "security",
+      "education"
+    ],
+    "author": "",
+    "license": "ISC"
+  }
+  

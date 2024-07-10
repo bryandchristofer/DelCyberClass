@@ -1,0 +1,55 @@
+.UploadFormBody {
+  display: flex;
+  flex: 1;
+}
+
+.container {
+  width: 90%; /* Lebar relatif terhadap viewport */
+  max-width: 1200px; /* Lebar maksimal yang lebih besar */
+  padding: 40px; /* Padding lebih luas untuk ruang ekstra di dalam container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk tampilan mendalam */
+  background-color: #ffffff; /* Warna latar belakang putih */
+  border-radius: 8px; /* Border melengkung */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Margin antar grup form */
+}
+
+input[type="text"],
+.react-quill {
+  width: 100%; /* Memastikan input mengambil lebar penuh */
+  padding: 12px; /* Padding yang lebih nyaman */
+  border: 1px solid #ccc; /* Border tetap */
+  border-radius: 4px; /* Sudut border melengkung */
+}
+
+input[type="text"] {
+  height: 50px; /* Tinggi input lebih besar untuk kenyamanan */
+}
+
+.react-quill {
+  background-color: #fff; /* Latar belakang putih */
+  border: 1px solid #ccc; /* Border yang sesuai */
+  border-radius: 4px; /* Sudut melengkung */
+}
+
+.Tambah-Materi-Submit-Button {
+  background-color: #4caf50; /* Warna hijau untuk tombol */
+  padding: 15px 20px; /* Padding lebih besar untuk tombol */
+  margin-top: 30px; /* Margin atas lebih besar */
+  border: none; /* Tidak ada border */
+  border-radius: 5px; /* Sudut tombol melengkung */
+  cursor: pointer; /* Kursor pointer */
+  width: 100%; /* Lebar penuh untuk tombol */
+}
+
+.Submit-Button:hover {
+  background-color: #45a049; /* Warna saat hover */
+}
+
+label {
+  display: block; /* Membuat label menjadi blok */
+  margin-top: 10px;
+  font-weight: bold; /* Font tebal */
+}
