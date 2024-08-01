@@ -12,6 +12,11 @@ const port = 3001;
 app.use(cors());
 app.use(express.json());
 
+// Periksa apakah JWT_SECRET terdefinisi
+if (!process.env.JWT_SECRET) {
+  throw new Error("JWT_SECRET is not defined in .env file");
+}
+
 // Fungsi untuk memverifikasi token dan mendapatkan role dari user
 const authenticateJwt = expressJwt({
   secret: process.env.JWT_SECRET,

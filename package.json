@@ -1,12 +1,16 @@
 {
-  "name": "lms",
+  "name": "delcyberclass",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "concurrently \"npm run server1\" \"npm run server2\" \"npm run server3\" \"npm run server4\" \"npm run server5\" \"npm run client\"",
+    "server1": "node \"src/CRUD Materi/CRUD-Backend.js\"",
+    "server2": "node \"src/File Stealing/start-practicum.js\"",
+    "server3": "node \"src/Login Backend/login-register-backend.js\"",
+    "server4": "node \"src/Tambah Praktikum/TambahPraktikumBackend.js\"",
+    "server5": "node \"src/XSS/BackendXSS.js\"",
+    "client": "cd client && npm start",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
@@ -21,6 +25,7 @@
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "bootstrap": "^5.3.3",
+    "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "dockerode": "^4.0.2",
     "dotenv": "^16.4.5",

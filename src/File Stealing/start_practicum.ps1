@@ -2,7 +2,7 @@
 $remoteUser = "user-ssh"
 $remotePort = 2375
 $localPort = 2375
-$primaryHost = "192.168.210.120"
+$primaryHost = "192.168.165.120"
 $backupHost = "192.168.210.191"
 
 # Function to check if SSH tunnel is already running

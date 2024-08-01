@@ -14,7 +14,7 @@ import EditPraktikum from "./Tambah Praktikum/EditPraktikum";
 import DetailPraktikum from "./Tambah Praktikum/DetailPraktikum";
 import TambahPengajar from "./Pages/TambahPengajar";
 import Praktikum from "./Pages/Praktikum";
-import XSS from "./XSS Frontend/XSS";
+import XSS from "./XSS/XSS";
 import PanduanXSS from "./Pages/PanduanXSS";
 import TambahMateri from "./CRUD Materi/TambahMateri";
 import MateriDetail from "./CRUD Materi/MaterialDetail";
